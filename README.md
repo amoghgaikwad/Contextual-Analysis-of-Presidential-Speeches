@@ -18,6 +18,12 @@ years	to	obtain	the	average	of	each	word	per	year	(for	all	the	addresses)
 The	average	of	every	word	is	computed	from	1790-2016.	See results in output file.
 
 
-PART	B:	Computing	Standard	Deviation:
+Computing	Standard	Deviation:
 
+Included	the	computation	of	for	the	standard	deviation	:
+word,	((float(word2count[word])- float(word2count[word]/total_no_of_years))**2)/len(word2count))
 
+This	line	would	calculate	the	average	by	dividing	the	count	of	every	word	with	the	total	
+number	of	years	and	taking a	square	it	and	then	dividing	the	whole	value	obtained	with	
+the	total	no	of	words	in	the	document.	This	is	the	same	as	the	standard	deviation	
+formula.
